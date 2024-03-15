@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fitness Bros</title>
+  </head>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
+  <style>
+    body {
+      font-family: "Sofia", sans-serif;
+      text-shadow: 3px 3px 3px #ababab;
+      color: white;
+      margin: 0px;
+      padding: 0px;
+      background: url("img/img1.jpg");
+    }
+
+    .left {
+      display: inline-block;
+      /* border: 2px solid green; */
+      position: absolute;
+      left: 34px;
+      top: 20px;
+    }
+
+    .left img {
+      width: 80px;
+      filter: invert(15%);
+    }
+    .left div {
+      text-align: center;
+    }
+
+    .mid {
+      display: block;
+      width: 35%;
+      margin: 20px auto;
+      /* border: 2px solid purple; */
+    }
+    .right {
+      position: absolute;
+      right: 34px;
+      top: 20px;
+      /* border: 2px solid rgb(133, 124, 124); */
+    }
+
+    .navbar {
+      display: inline-block;
+    }
+
+    .navbar li {
+      display: inline-block;
+      font-size: 16px;
+    }
+
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+      padding: 24px 20px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+      text-decoration: underline;
+      color: grey;
+    }
+
+    .btn {
+      font-family: "Sofia", sans-serif;
+      text-shadow: 3px 3px 3px #ababab;
+      margin: 0px 10px;
+      color: black;
+      background-color: none;
+      padding: 4px 20px;
+      border: 2px solid grey;
+      border-radius: 25px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .btn1 {
+      font-family: "Sofia", sans-serif;
+      text-shadow: 3px 3px 3px #ababab;
+      margin: 20px 10px;
+      color: black;
+      text-align: center;
+      background-color: none;
+      padding: auto;
+      border: 2px solid grey;
+      border-radius: 25px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      text-decoration: solid;
+      background-color: white;
+    }
+
+    .container {
+      border: 2px solid black;
+      margin: 110px 70px;
+      padding: 0px 30px;
+      width: 28%;
+      border-radius: 28px;
+    }
+
+    .form {
+      font-family: "Sofia", sans-serif;
+      text-shadow: 4px 4px 4px #ababab;
+      text-align: center;
+      display: block;
+      width: 300px;
+      padding: 2px;
+      /* border: 2px solid black; */
+      margin: 5px 25px;
+      font-size: 25px;
+      border-radius: 8px;
+      /* background-color:white ; */
+    }
+
+    .container h2 {
+      margin: 10px 42px;
+    }
+
+    .container button{
+      display: block;
+      width: 15%;
+      margin: 20px 133px;
+
+    }
+
+
+
+  </style>
+  <body>
+    <header class="header">
+      <!-- Left box for the logo -->
+      <div class="left">
+        <img src="img/img2.jpg" alt="" />
+        <div>Fitness Flex</div>
+      </div>
+      <!-- Mid box for the Navbar -->
+      <div class="mid">
+        <div class="navbar">
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Fitness Calc</a></li>
+            <li><a href="#"> Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right box for the Buttons -->
+
+      <div class="right">
+        <button class="btn">Call Us</button>
+        <button class="btn">E-mail us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h2>Join our Best Fitness Gym</h2>
+      <form action="noaction.php">
+        <div class="form">
+          <input class="w3-input w3-border-0" type="name" name="" placeholder="Enter your name">
+        </div>
+
+         <div class="form">
+          <input type="phone" name="" placeholder="Enter Your no." />
+        </div>
+
+        <div class="form">
+          <input type="email" name="" placeholder="Enter your E-mail" />
+        </div>
+
+        <div class="form">
+          <input type="address" name="" placeholder="Enter your Address" />
+        </div>
+        <button class="btn1">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
